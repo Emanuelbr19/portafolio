@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManuPhoto - Fotografía Profesional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #959595;
+            --secondary-color: #000000;
+            --light-gray: #f8f9fa;
+            --dark-gray: #303030;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: rgba(74, 74, 74, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080?text=Fotografía+Profesional');
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            padding: 150px 0;
+            text-align: center;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--secondary-color);
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #000000;
+            color: white;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 50px 0;
+        }
+        
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .footer-links a:hover {
+            color: rgb(82, 82, 82);
+        }
+        
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            bottom: 40px;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            bottom: -10px;
+            left: 25%;
+        }
+#contacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),  #4e4e4e; }
+
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo1.1.png" alt="logo manuhoto" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav ms-auto " >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio" >Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Contenido -->
+<div class="container">
+    <h1 class="text-center section-title mb-4">Preguntas frecuentes sobre producción multimedia</h1>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm rounded-3">
+                <div class="card-body">
+                    <h2 class="card-title h5">¿Qué herramientas básicas necesito para comenzar?</h2>
+                    <p class="card-text">
+                        Puedes usar programas como Adobe Premiere, DaVinci Resolve o Final Cut para video,
+                        y Audacity o Adobe Audition para audio.  
+                        Si quieres ver una lista más completa, visita 
+                        <a href="https://www.ejemplo.com/herramientas-produccion-multimedia" target="_blank">
+                            nuestra guía de herramientas recomendadas
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm rounded-3">
+                <div class="card-body">
+                    <h2 class="card-title h5">¿Qué es la producción multimedia?</h2>
+                    <p class="card-text">
+                        Es el proceso de crear contenidos que combinan distintos medios (texto, audio, video, animación, etc.).
+                        Conoce más detalles en 
+                        <a href="https://www.ejemplo.com/que-es-produccion-multimedia" target="_blank">
+                            este artículo detallado
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/logo1.1.png" alt="logo manuhoto" style="height: 100px;">
+                    <p>Fotografía profesional que captura la esencia de tus momentos especiales.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Enlaces</h5>
+                    <div class="footer-links">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#portafolio">Portafolio</a>
+                        <a href="#sobre-mi">Sobre Mí</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Servicios</h5>
+                    <div class="footer-links">
+                        <a href="#">Bodas</a>
+                        <a href="#">Retratos</a>
+                        <a href="#">Eventos</a>
+                        <a href="#">Producto</a>
+                        <a href="#">Fotografía Aérea</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <div class="footer-links">
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 ManuPhoto. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
